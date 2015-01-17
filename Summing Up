@@ -1,0 +1,32 @@
+;>;   
+Add B and put into temp
+[        o
+    -   
+    > 
+    +
+	>
+	+   
+    <<      
+]
+Put B Back from temp
+>> Point to cell three
+[
+	-
+	<<+
+	>>
+]
+Add A and put into temp
+<<<
+[
+	-
+	>>+
+	>+
+	<<<
+]
+Put A back from temp
+>>>
+[
+	-
+	<<<+
+	>>>
+]<:
