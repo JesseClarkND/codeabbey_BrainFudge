@@ -1,0 +1,28 @@
+;  //Read in starting number to 0
+>
+>++ //Put your divisor here 2
+<<  //Point to 0
+[
+  -   //Dec starting number 0
+  >+  //Inc (1)  The starting number will be copied here
+  >-  //Dec your divider (2)
+  [  //The point of this loop is to increment a temp storage to that will be used to return the divisor back to the starting amount
+    >+ // Inc (3) this is where the temp spot will be held
+    >>  //This moves the pointer out to (5) so it will skip the next loop
+  ]
+  > //Points to (3) or (6) depending on if the above loop is completed
+  [ //First time here it is 0 so this loop will skip and got to Sna
+    + //Inc (3) //Need to do an extra one to balance
+    [
+      -  //Dec (3)
+      <+ //Inc (2)
+      >  //Point to (3)
+    ]
+    >+  //Point and Inc (4) This is the quotient 
+    >>  //Point to (6)
+  ]
+<<<<<<] //Name Sna  point back to (0)
+
+>[<+>-] //Copies the starting number back to its starting memory location
+>[-] //Gets rid of extra unneeded data 
+>>:<: //Print (4) and (3)
